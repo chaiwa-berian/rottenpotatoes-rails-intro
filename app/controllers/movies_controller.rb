@@ -12,7 +12,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    
+    #Comment for part 1 complete
     if params[:title] == "sort"
       @movies = Movie.all.order(:title => "ASC")
       @title_header_class= "hilite"
